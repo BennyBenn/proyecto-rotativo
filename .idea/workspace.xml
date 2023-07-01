@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="repo2 xD">
-      <change afterPath="$PROJECT_DIR$/src/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estudiante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,22 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f7b7c57d-9dd9-4bdf-96db-5b92c21108f5" />
+        <option name="url" value="https://github.com/BennyBenn/proyecto-rotativo" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RwhGqY4Ao5OuSif7y6KX55LQgT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -62,11 +76,27 @@
       <option name="project" value="LOCAL" />
       <updated>1688167055309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito.">
+      <created>1688174733177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688174733177</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Clases Usuario y Estudiante v2">
+      <created>1688175509251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688175509251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="repo2 xD" />
-    <option name="LAST_COMMIT_MESSAGE" value="repo2 xD" />
+    <MESSAGE value="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito." />
+    <MESSAGE value="Clases Usuario y Estudiante v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v2" />
   </component>
 </project>

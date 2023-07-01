@@ -32,4 +32,22 @@ public class Usuario {
     public String getMatricula(){return Matricula;}
     public Date getFechaNacimiento() {return fechaNacimiento;}
     public String getCargo(){return Cargo;}
+
+    public String toString(){
+        String datos = "";
+        datos += "Nombre: " + getNombre() + "\n";
+        datos += "Matricula: "+ getMatricula() + "\n";
+        datos += "Fecha de nacimiento:" + getFechaNacimiento() + "\n";
+        datos += "Cargo:" + getCargo() + "\n";
+        return datos;
+    }
+
+    public String getDatosUsuario(){
+        String datos = "";
+        datos += "Nombre: " + getNombre() + "\n";
+        datos += "Matricula: "+ getMatricula() + "\n";
+        datos += "Cargo:" + getCargo() + "\n";
+        return datos;
+
+    }
 }
