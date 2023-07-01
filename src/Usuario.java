@@ -14,6 +14,7 @@ public class Usuario {
         this.Cargo = cargo;
     }
 
+
     public Usuario(String nombre,String matricula,String cargo){
         this.Nombre = nombre;
         this.Matricula=matricula;
