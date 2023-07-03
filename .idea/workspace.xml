@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas">
-      <change afterPath="$PROJECT_DIR$/src/SuperUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estudiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688166960791</updated>
       <workItem from="1688355920510" duration="99000" />
-      <workItem from="1688356043903" duration="5932000" />
+      <workItem from="1688356043903" duration="6089000" />
     </task>
     <task id="LOCAL-00001" summary="repo2 xD">
       <created>1688167055309</created>
@@ -123,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688178127876</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
+      <option name="closed" value="true" />
+      <created>1688362275604</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688362275604</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +135,7 @@
     <MESSAGE value="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito." />
     <MESSAGE value="Clases Usuario y Estudiante v2" />
     <MESSAGE value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
+    <MESSAGE value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
+    <option name="LAST_COMMIT_MESSAGE" value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
   </component>
 </project>
