@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v2">
+    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas">
+      <change afterPath="$PROJECT_DIR$/src/Consultas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
     </list>
@@ -97,13 +98,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688176280160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas">
+      <created>1688177972198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688177972198</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas">
+      <created>1688178127876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688178127876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="repo2 xD" />
     <MESSAGE value="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito." />
     <MESSAGE value="Clases Usuario y Estudiante v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v2" />
+    <MESSAGE value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
   </component>
 </project>
