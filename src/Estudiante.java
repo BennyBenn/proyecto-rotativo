@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Estudiante extends Usuario{
+public class Estudiante extends Usuario implements Autenticar{
     private String Carrera;
     private int Semestre;
     private String Grupo;
@@ -55,6 +55,16 @@ public class Estudiante extends Usuario{
         datos += "Semestre" + getSemestre() + "\n";
         datos += "Grupo" + getGrupo() + "\n";
         return datos;
+    }
+
+    @Override
+    public void setClave(String clave) {
+
+    }
+
+    @Override
+    public boolean IniciarSesion(String clave) {
+        return false;
     }
     //
 }

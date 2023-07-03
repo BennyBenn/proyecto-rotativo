@@ -1,4 +1,4 @@
-public class administrador extends SuperUsuario {
+public class administrador extends SuperUsuario implements Autenticar {
 
     private String otorgarPrivilegiosDeAdministrador="contraseña";
 
@@ -26,4 +26,13 @@ public class administrador extends SuperUsuario {
     public void ModificarEstudiantes(Estudiante nombreEstudiante){}
     public void registrarEstudiantes(Estudiante nombreEstudiante){}
 
+    @Override
+    public void setClave(String clave) {
+
+    }
+
+    @Override
+    public boolean IniciarSesion(String clave) {
+        return false;
+    }
 }

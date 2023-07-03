@@ -1,4 +1,4 @@
-public class SuperUsuario extends Usuario {
+public class SuperUsuario extends Usuario implements Autenticar {
     private String otorgarPrivilegiosDeSuperUsuarios="supercontraseña";
     private String otorgarPrivilegiosDeAdministrador="contraseña";
     public SuperUsuario(String nombre,String matricula,String cargo){
@@ -24,7 +24,13 @@ public class SuperUsuario extends Usuario {
     public void modificarEstudiantes(Estudiante nombreEstudiante){}
 
 
+    @Override
+    public void setClave(String clave) {
 
+    }
 
-
+    @Override
+    public boolean IniciarSesion(String clave) {
+        return false;
+    }
 }
