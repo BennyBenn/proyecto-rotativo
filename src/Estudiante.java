@@ -6,6 +6,7 @@ public class Estudiante extends Usuario{
     private String Grupo;
 
     public Estudiante(String nombre, String matricula, Date fechanac,String carrera,int semestre,String grupo){
+
         super.setNombre(nombre);
         super.setMatricula(matricula);
         super.setFechaNacimiento(fechanac);
@@ -13,6 +14,7 @@ public class Estudiante extends Usuario{
         this.Carrera = carrera;
         this.Semestre = semestre;
         this.Grupo = grupo;
+
     }
 
     public Estudiante(String nombre, String matricula,String carrera,int semestre,String grupo){
