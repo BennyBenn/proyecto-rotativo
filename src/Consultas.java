@@ -16,7 +16,7 @@ public class Consultas {
     public String consultarEstudiante_DatosDetallados(Estudiante estudianteConsultar){
         return estudianteConsultar.toString();
     }
-
+    //
 
 
 }

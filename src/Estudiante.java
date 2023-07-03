@@ -54,5 +54,5 @@ public class Estudiante extends Usuario{
         datos += "Grupo" + getGrupo() + "\n";
         return datos;
     }
-    
+    //
 }
