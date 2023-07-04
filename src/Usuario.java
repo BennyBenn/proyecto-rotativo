@@ -39,6 +39,7 @@ public class Usuario {
     public Date getFechaNacimiento() {return fechaNacimiento;}
     public String getCargo(){return Cargo;}
     public String getNombreUsuario(){return nombreUsuario;}
+    public String getContrasena(){return contrasena;}
     public int getNivelPrivilegios(){return nivelPrivilegios;}
 
 
