@@ -1,6 +1,12 @@
-public class administrador extends SuperUsuario implements Autenticar {
+import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+public class administrador extends Usuario implements Autenticar {
 
     private String otorgarPrivilegiosDeAdministrador="contraseña";
+    private String asistencia;
+    private static int totalAsistencias;
 
     public  administrador(String nombre, String matricula,String cargo, String contraseñaDeValidacion){
         do {
@@ -21,10 +27,33 @@ public class administrador extends SuperUsuario implements Autenticar {
         if(otorgarPrivilegiosDeAdministrador.equals(this.otorgarPrivilegiosDeAdministrador)) {return true;}
         else return false;
     }
+    public void setAsistencia(String asistencia ){
+        this.asistencia=asistencia;
+    }
+    public boolean controlASistencias(){
+        if (asistencia == "n"){
+            totalAsistencias++;
+            return true;
+        }else return false;
+    }
+    /*
+    metodo en construccion
+    public void generarReportes(String saludo, String cuerpo){
+        String rutaArchivo = "C:\\carpeta\\archivo.txt"; // Especificar la ruta completa del archivo
+        try {
+            FileWriter archivo = new FileWriter(new File(rutaArchivo));
+            archivo.write(saludo + "\n");
+            archivo.write(cuerpo);
+            archivo.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }*/
 
     public void EliminarEstudiante(Estudiante nombreEstudiante){}
     public void ModificarEstudiantes(Estudiante nombreEstudiante){}
     public void registrarEstudiantes(Estudiante nombreEstudiante){}
+
 
     @Override
     public void setClave(String clave) {
