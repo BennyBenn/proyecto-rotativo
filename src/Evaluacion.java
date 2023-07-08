@@ -19,6 +19,7 @@ public class Evaluacion {
             case "3":
                 System.out.println("Ingrese la fecha de nacimiento: ");
                 String fechaNacimiento = sc.nextLine();
+                //¿cómo convertir una variable de tipo String en Date?
                 /*modificacion.setFechaNacimiento(fechaNacimiento);*/
                 break;
             case "4":
