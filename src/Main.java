@@ -13,17 +13,12 @@ public class Main {
         lista.add (new Estudiante("Alejandro", "ID21156", "SOFT", 4, "302"));
         lista.add (new Estudiante("Rodolfo", "ID21119", "SOFT", 4, "302"));
 
-        Usuario Joaquin = new Usuario("Joaquin", "ID21111", "STMS");
-        List<Usuario> accesos = new ArrayList<>();
-        Joaquin.nombreUsuario = "chaparro";
-        Joaquin.contrasena = "1010";
-        Joaquin.nivelPrivilegios = 3;
-        accesos.add(Joaquin);
-
         Visualizacion prueba = new Visualizacion(lista);
-        prueba.modificarDatos("Rodolfo", accesos, "chaparro", "1010");
+        prueba.modificarDatos("Rodolfo");
         prueba.mostrarDatos();
-        prueba.eliminarDatos("Rodolfo", accesos, "chaparro", "1010");*/
+        prueba.eliminarDatos("R");
+        prueba.mostrarDatos();*/
+
         administrador ad1=new administrador("","","","");
        ad1.generarreportes("hola","como estan");
     }

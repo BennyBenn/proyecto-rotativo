@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
-      <change afterPath="$PROJECT_DIR$/src/Visualizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eliminar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Evaluacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modificar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mostrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Validacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visualizacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visualizacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,6 +85,8 @@
       <workItem from="1688355920510" duration="99000" />
       <workItem from="1688356043903" duration="6089000" />
       <workItem from="1688441572655" duration="409000" />
+      <workItem from="1688808994599" duration="3000" />
+      <workItem from="1688809006726" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="repo2 xD">
       <created>1688167055309</created>
