@@ -9,13 +9,13 @@ public class administrador extends Usuario implements Autenticar {
     private static int totalAsistencias;
 
     public  administrador(String nombre, String matricula,String cargo, String contraseñaDeValidacion){
-        do {
+       /*do {
             System.out.println("ingrese una contraseña de acceso valida");
         }while (super.permitirAccesoSuperUsuario(contraseñaDeValidacion) != false);
 
         super.setNombre(nombre);
         super.setMatricula(matricula);
-        super.setCargo(cargo);
+        super.setCargo(cargo);*/
 
     }
     public administrador(){}

@@ -1,16 +1,16 @@
 import java.util.List;
 import java.util.Scanner;
-public class Validacion extends Evaluacion{
+public class Validacion_general extends Evaluacion_general{
     private int posicion;
-    private Estudiante modificacion;
+    private Usuario modificacion;
     private String respuesta;
     private Scanner sc = new Scanner(System.in);
 
-    public void Manejardatos(List lista_modificacion, Estudiante elemento){
+    public void Manejardatos(List<Usuario> lista_modificacion, Usuario elemento){
         posicion = lista_modificacion.indexOf(elemento);
-        modificacion = new Estudiante(elemento.getNombre(), elemento.getMatricula(), elemento.getCarrera(), elemento.getSemestre(), elemento.getGrupo());
+        modificacion = new Usuario(elemento.getNombre(), elemento.getMatricula(), elemento.getCargo());
 
-        System.out.println("1. Nombre\n2. Matricula\n3. Fecha de Nacimiento\n4. Carrera\n5. Semestre\n6. Grupo");
+        System.out.println("1. Nombre\n2. Matricula\n3. Fecha de Nacimiento\n4. Cargo");
         System.out.println("Ingrese la opción que desee: ");
         String opcion = sc.nextLine();
 
@@ -20,7 +20,7 @@ public class Validacion extends Evaluacion{
         lista_modificacion.add(posicion, modificacion);
     }
 
-    public void Olvidardatos(List lista_modificacion, Estudiante elemento){
+    public void Olvidardatos(List<Usuario> lista_modificacion, Usuario elemento){
         posicion = lista_modificacion.indexOf(elemento);
 
         System.out.println("¿Está seguro de eliminar el registro " + elemento.getNombre() + "? (S/N): ");

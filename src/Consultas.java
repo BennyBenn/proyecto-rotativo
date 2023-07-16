@@ -1,5 +1,4 @@
-public class Consultas {
-
+public class Consultas{
 
     public String consultarUsuario_Datos(Usuario usuarioConsultar){
         return usuarioConsultar.getDatosUsuario();

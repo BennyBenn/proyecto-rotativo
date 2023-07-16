@@ -1,38 +1,37 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class Visualizacion extends Validacion implements Mostrar, Modificar, Eliminar{
+public class Visualizacion_general extends Validacion_general implements Mostrar, Modificar, Eliminar{
     private Scanner sc = new Scanner(System.in);
     private String usuario;
     private String decision;
-    private List<Estudiante> lista;
-    private List<Estudiante> lista_modificacion;
-    private List<Estudiante> copiaLista;
+    private List<Usuario> lista;
+    private List<Usuario> lista_modificacion;
+    private List<Usuario> copiaLista;
 
 
-    public Visualizacion(List<Estudiante> lista){
+    public Visualizacion_general(List<Usuario> lista){
         this.lista = lista;
         this.lista_modificacion = new ArrayList<>(lista);
     }
 
+
     public void Mostrardatos(){
-        for (Estudiante elemento : lista){System.out.println(elemento);}
+        for (Usuario elemento : lista){System.out.println(elemento);}
     }
 
     public void Mostrardatos(String usuario){
         this.usuario = usuario;
-        for (Estudiante elemento : lista){
+        for (Usuario elemento : lista){
             if (elemento.getNombre().equals(usuario)){System.out.println(elemento);}
         }
     }
 
-    public void Modificardatos() {
-        for (Usuario elemento : lista_modificacion){System.out.println(elemento);}
-    }
+    public void Modificardatos(){}
 
     public void Modificardatos(String usuario){
         this.usuario = usuario;
-        for (Estudiante elemento : lista) {if (elemento.getNombre().equals(usuario)){
+        for (Usuario elemento : lista) {if (elemento.getNombre().equals(usuario)){
             System.out.println(elemento);
             do {
                 Manejardatos(lista_modificacion, elemento);
@@ -42,11 +41,12 @@ public class Visualizacion extends Validacion implements Mostrar, Modificar, Eli
         }
         }
     }
+
     public void Eliminardatos(){}
     public void Eliminardatos(String usuario){
         this.usuario = usuario;
         copiaLista = new ArrayList<>(lista_modificacion);
-        for (Estudiante elemento : copiaLista) {if (elemento.getNombre().equals(usuario)) {
+        for (Usuario elemento : copiaLista) {if (elemento.getNombre().equals(usuario)) {
             Olvidardatos(lista_modificacion, elemento);}
         }
     }
