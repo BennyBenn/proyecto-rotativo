@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
+    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
+      <change afterPath="$PROJECT_DIR$/src/AlmacenDatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CreadorGOD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evaluacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evaluacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/administrador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +21,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -58,13 +62,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/wbb/IdeaProjects/proyecto-rotativo/ProyectoRotativo2/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/wbb/IdeaProjects/proyecto-rotativo/ProyectoRotativo2/src/Main.java&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,12 +73,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688166960791</updated>
-      <workItem from="1688355920510" duration="99000" />
-      <workItem from="1688356043903" duration="6089000" />
-      <workItem from="1688441572655" duration="409000" />
-      <workItem from="1688808994599" duration="3000" />
-      <workItem from="1688809006726" duration="390000" />
-      <workItem from="1688810128530" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="repo2 xD">
       <created>1688167055309</created>
@@ -124,26 +116,29 @@
       <option name="project" value="LOCAL" />
       <updated>1688178127876</updated>
     </task>
-    <task id="LOCAL-00007" summary="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
-      <option name="closed" value="true" />
-      <created>1688362275604</created>
+    <task id="LOCAL-00007" summary="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
+      <created>1688355616409</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1688362275604</updated>
+      <updated>1688355616409</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
+      <created>1688355719720</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688355719720</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="repo2 xD" />
     <MESSAGE value="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito." />
     <MESSAGE value="Clases Usuario y Estudiante v2" />
     <MESSAGE value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
-    <MESSAGE value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
-    <option name="LAST_COMMIT_MESSAGE" value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
+    <MESSAGE value="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias" />
   </component>
 </project>

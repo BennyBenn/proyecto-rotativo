@@ -1,0 +1,202 @@
+Index: src/administrador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class administrador extends SuperUsuario implements Autenticar {\r\n\r\n    private String otorgarPrivilegiosDeAdministrador=\"contraseña\";\r\n\r\n    public  administrador(String nombre, String matricula,String cargo, String contraseñaDeValidacion){\r\n        do {\r\n            System.out.println(\"ingrese una contraseña de acceso valida\");\r\n        }while (super.permitirAccesoSuperUsuario(contraseñaDeValidacion) != false);\r\n\r\n        super.setNombre(nombre);\r\n        super.setMatricula(matricula);\r\n        super.setCargo(cargo);\r\n\r\n    }\r\n    public administrador(){}\r\n\r\n    public String getNombre(){return super.getNombre();}\r\n    public String getMatricula(){return super.getMatricula();}\r\n    public String getCargo(){return super.getCargo();}\r\n    public boolean permitirAccesoUsuario(String otorgarPrivilegiosDeADministrador ){\r\n        if(otorgarPrivilegiosDeAdministrador.equals(this.otorgarPrivilegiosDeAdministrador)) {return true;}\r\n        else return false;\r\n    }\r\n\r\n    public void EliminarEstudiante(Estudiante nombreEstudiante){}\r\n    public void ModificarEstudiantes(Estudiante nombreEstudiante){}\r\n    public void registrarEstudiantes(Estudiante nombreEstudiante){}\r\n\r\n    @Override\r\n    public void setClave(String clave) {\r\n\r\n    }\r\n\r\n    @Override\r\n    public boolean IniciarSesion(String clave) {\r\n        return false;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/administrador.java b/src/administrador.java
+--- a/src/administrador.java	(revision 414e00350e17989ca93beaa527eeb9233bf42e76)
++++ b/src/administrador.java	(date 1688446363384)
+@@ -1,5 +1,6 @@
+ public class administrador extends SuperUsuario implements Autenticar {
+ 
++    protected int NIVEL_PRIVILEGIO = 1;
+     private String otorgarPrivilegiosDeAdministrador="contraseña";
+ 
+     public  administrador(String nombre, String matricula,String cargo, String contraseñaDeValidacion){
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f7deec64-2553-4397-8655-68dbae5c603e\" name=\"Changes\" comment=\"clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso\">\n      <change afterPath=\"$PROJECT_DIR$/src/Visualizacion.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Usuario.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Usuario.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PUSH_TAGS\">\n      <GitPushTagMode>\n        <option name=\"argument\" value=\"--tags\" />\n        <option name=\"title\" value=\"All\" />\n      </GitPushTagMode>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"f7b7c57d-9dd9-4bdf-96db-5b92c21108f5\" />\n        <option name=\"url\" value=\"https://github.com/BennyBenn/proyecto-rotativo\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2RwhGqY4Ao5OuSif7y6KX55LQgT\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;/home/wbb/IdeaProjects/proyecto-rotativo/ProyectoRotativo2/src/Main.java&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f7deec64-2553-4397-8655-68dbae5c603e\" name=\"Changes\" comment=\"\" />\n      <created>1688166960791</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1688166960791</updated>\n      <workItem from=\"1688355920510\" duration=\"99000\" />\n      <workItem from=\"1688356043903\" duration=\"6089000\" />\n      <workItem from=\"1688441572655\" duration=\"409000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"repo2 xD\">\n      <created>1688167055309</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688167055309</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito.\">\n      <created>1688174733177</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688174733177</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Clases Usuario y Estudiante v2\">\n      <created>1688175509251</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688175509251</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Clases Usuario y Estudiante v2\">\n      <created>1688176280160</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688176280160</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas\">\n      <created>1688177972198</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688177972198</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas\">\n      <created>1688178127876</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688178127876</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1688362275604</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1688362275604</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"repo2 xD\" />\n    <MESSAGE value=\"Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito.\" />\n    <MESSAGE value=\"Clases Usuario y Estudiante v2\" />\n    <MESSAGE value=\"Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas\" />\n    <MESSAGE value=\"clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 414e00350e17989ca93beaa527eeb9233bf42e76)
++++ b/.idea/workspace.xml	(date 1688446525634)
+@@ -4,11 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
+-      <change afterPath="$PROJECT_DIR$/src/Visualizacion.java" afterDir="false" />
++    <list default="true" id="f7deec64-2553-4397-8655-68dbae5c603e" name="Changes" comment="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
++      <change afterPath="$PROJECT_DIR$/src/CreadorGOD.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/SuperUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperUsuario.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/administrador.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,6 +25,7 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_AUTO_UPDATE" value="true" />
+     <option name="PUSH_TAGS">
+       <GitPushTagMode>
+         <option name="argument" value="--tags" />
+@@ -59,13 +62,7 @@
+   &quot;keyToString&quot;: {
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/wbb/IdeaProjects/proyecto-rotativo/ProyectoRotativo2/src/Main.java&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++    &quot;onboarding.tips.debug.path&quot;: &quot;/home/wbb/IdeaProjects/proyecto-rotativo/ProyectoRotativo2/src/Main.java&quot;
+   }
+ }</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -76,9 +73,6 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1688166960791</updated>
+-      <workItem from="1688355920510" duration="99000" />
+-      <workItem from="1688356043903" duration="6089000" />
+-      <workItem from="1688441572655" duration="409000" />
+     </task>
+     <task id="LOCAL-00001" summary="repo2 xD">
+       <created>1688167055309</created>
+@@ -122,26 +116,29 @@
+       <option name="project" value="LOCAL" />
+       <updated>1688178127876</updated>
+     </task>
+-    <task id="LOCAL-00007" summary="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso">
+-      <option name="closed" value="true" />
+-      <created>1688362275604</created>
++    <task id="LOCAL-00007" summary="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
++      <created>1688355616409</created>
+       <option name="number" value="00007" />
+       <option name="presentableId" value="LOCAL-00007" />
+       <option name="project" value="LOCAL" />
+-      <updated>1688362275604</updated>
++      <updated>1688355616409</updated>
++    </task>
++    <task id="LOCAL-00008" summary="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias">
++      <created>1688355719720</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1688355719720</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="repo2 xD" />
+     <MESSAGE value="Clases Usuario y Estudiante agregadas,primera version de las mismas que funcionan como bosquejo para que el resto del codigo pueda ser escrito." />
+     <MESSAGE value="Clases Usuario y Estudiante v2" />
+     <MESSAGE value="Clases Usuario y Estudiante v3&#10;&#10;Casi terminadas" />
+-    <MESSAGE value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
+-    <option name="LAST_COMMIT_MESSAGE" value="clases SuperUsuario y administrador añadidas&#10;metodos en blanco para su posterior uso" />
++    <MESSAGE value="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias" />
++    <option name="LAST_COMMIT_MESSAGE" value="Clases Usuario y Estudiante v3.1&#10;&#10;Clases terminadas, de usuario extendemos a admin y superadmin por lo que clases especializadas son innecesarias" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/SuperUsuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class SuperUsuario extends Usuario implements Autenticar {\r\n    private String otorgarPrivilegiosDeSuperUsuarios=\"supercontraseña\";\r\n    private String otorgarPrivilegiosDeAdministrador=\"contraseña\";\r\n    public SuperUsuario(String nombre,String matricula,String cargo){\r\n        super.setNombre(nombre);\r\n        super.setMatricula(matricula);\r\n        super.setCargo(cargo);\r\n\r\n    }\r\n    public SuperUsuario(){}\r\n    public boolean permitirAccesoAdministrador(String otorgarPrivilegiosDeAdministrador ){\r\n        if(otorgarPrivilegiosDeAdministrador.equals(this.otorgarPrivilegiosDeAdministrador)) {return true;}\r\n        else return false;\r\n    }\r\n    public boolean permitirAccesoSuperUsuario(String otorgarPrivilegiosDeSuperUsuarios ){\r\n        if(otorgarPrivilegiosDeSuperUsuarios.equals(this.otorgarPrivilegiosDeSuperUsuarios)) {return true;}\r\n        else return false;\r\n    }\r\n    public void eliminarAdministradores(administrador nombreAdmoinistrador){}\r\n    public void modificarAdministradores(administrador nombreAdmoinistrador){}\r\n    public void registrarAdministradores(administrador nombreAdmoinistrador){}\r\n    public void eliminarEstudiante(Estudiante nombreEstudiante){}\r\n    public void registarEstudiante(Estudiante nombreEstudiante){}\r\n    public void modificarEstudiantes(Estudiante nombreEstudiante){}\r\n\r\n\r\n    @Override\r\n    public void setClave(String clave) {\r\n\r\n    }\r\n\r\n    @Override\r\n    public boolean IniciarSesion(String clave) {\r\n        return false;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/SuperUsuario.java b/src/SuperUsuario.java
+--- a/src/SuperUsuario.java	(revision 414e00350e17989ca93beaa527eeb9233bf42e76)
++++ b/src/SuperUsuario.java	(date 1688446508789)
+@@ -1,4 +1,6 @@
+ public class SuperUsuario extends Usuario implements Autenticar {
++    protected int NIVEL_PRIVILEGIO = 2;
++
+     private String otorgarPrivilegiosDeSuperUsuarios="supercontraseña";
+     private String otorgarPrivilegiosDeAdministrador="contraseña";
+     public SuperUsuario(String nombre,String matricula,String cargo){
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/out\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 414e00350e17989ca93beaa527eeb9233bf42e76)
++++ b/.idea/misc.xml	(date 1688446390612)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/CreadorGOD.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/CreadorGOD.java b/src/CreadorGOD.java
+new file mode 100644
+--- /dev/null	(date 1688446379828)
++++ b/src/CreadorGOD.java	(date 1688446379828)
+@@ -0,0 +1,13 @@
++public class CreadorGOD {
++
++    private void crearUsuario(administrador admin){
++
++
++    }
++
++    private void crearAdministrador(SuperUsuario supersu){
++
++
++    }
++
++}
+Index: src/Usuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Date;\r\n\r\npublic class Usuario {\r\n\r\n    private String Nombre;\r\n    private String Matricula;\r\n    private Date fechaNacimiento;\r\n    private String Cargo;\r\n\r\n\r\n    protected String nombreUsuario;\r\n    protected String contrasena;\r\n    protected int nivelPrivilegios;\r\n\r\n    public Usuario(String nombre,String matricula,Date fechaNac,String cargo){\r\n        this.Nombre = nombre;\r\n        this.Matricula = matricula;\r\n        this.fechaNacimiento=fechaNac;\r\n        this.Cargo = cargo;\r\n    }\r\n\r\n    public Usuario(String nombre,String matricula,String cargo){\r\n        this.Nombre = nombre;\r\n        this.Matricula=matricula;\r\n        this.Cargo = cargo;\r\n    }\r\n    public Usuario(){}\r\n\r\n    public void setNombre(String nombre){ this.Nombre = nombre;}\r\n    public void setMatricula(String matricula) { this.Matricula = matricula;}\r\n    public void setFechaNacimiento(Date fechaNac) {this.fechaNacimiento=fechaNac;}\r\n    public void setCargo(String cargo){  this.Cargo = cargo;}\r\n    public void setNombreUsuario(String nombreusuario) {this.nombreUsuario = nombreusuario;}\r\n    public void setContrasena(String contrasena){this.contrasena =contrasena;}\r\n    public void setNivelPrivilegios(int privilegios){this.nivelPrivilegios = nivelPrivilegios;}\r\n\r\n    public String getNombre(){return Nombre;}\r\n    public String getMatricula(){return Matricula;}\r\n    public Date getFechaNacimiento() {return fechaNacimiento;}\r\n    public String getCargo(){return Cargo;}\r\n    public String getNombreUsuario(){return nombreUsuario;}\r\n    public String getContrasena(){return contrasena;}\r\n    public int getNivelPrivilegios(){return nivelPrivilegios;}\r\n\r\n\r\n    public String toString(){\r\n        String datos = \"\";\r\n        datos += \"Nombre: \" + getNombre() + \"\\n\";\r\n        datos += \"Matricula: \"+ getMatricula() + \"\\n\";\r\n        datos += \"Fecha de nacimiento:\" + getFechaNacimiento() + \"\\n\";\r\n        datos += \"Cargo:\" + getCargo() + \"\\n\";\r\n        return datos;\r\n    }\r\n\r\n    public String getDatosUsuario(){\r\n        String datos = \"\";\r\n        datos += \"Nombre: \" + getNombre() + \"\\n\";\r\n        datos += \"Matricula: \"+ getMatricula() + \"\\n\";\r\n        datos += \"Cargo:\" + getCargo() + \"\\n\";\r\n        return datos;\r\n\r\n    }\r\n    //\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Usuario.java b/src/Usuario.java
+--- a/src/Usuario.java	(revision 414e00350e17989ca93beaa527eeb9233bf42e76)
++++ b/src/Usuario.java	(date 1688446379812)
+@@ -2,12 +2,13 @@
+ 
+ public class Usuario {
+ 
++    protected final int NIVEL_PRIVILEGIO=0;
++
+     private String Nombre;
+     private String Matricula;
+     private Date fechaNacimiento;
+     private String Cargo;
+ 
+-
+     protected String nombreUsuario;
+     protected String contrasena;
+     protected int nivelPrivilegios;

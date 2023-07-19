@@ -1,4 +1,6 @@
 public class SuperUsuario extends Usuario implements Autenticar {
+    protected int NIVEL_PRIVILEGIO = 2;
+
     private String otorgarPrivilegiosDeSuperUsuarios="supercontraseña";
     private String otorgarPrivilegiosDeAdministrador="contraseña";
     public SuperUsuario(String nombre,String matricula,String cargo){

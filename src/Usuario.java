@@ -2,11 +2,12 @@ import java.util.Date;
 
 public class Usuario {
 
+    protected final int NIVEL_PRIVILEGIO=0;
+
     private String Nombre;
     private String Matricula;
     private Date fechaNacimiento;
     private String Cargo;
-
 
     protected String nombreUsuario;
     protected String contrasena;

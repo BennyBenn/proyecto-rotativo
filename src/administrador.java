@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 public class administrador extends Usuario implements Autenticar {
 
+    protected int NIVEL_PRIVILEGIO = 1;
     private String otorgarPrivilegiosDeAdministrador="contraseña";
     private String asistencia;
     private static int totalAsistencias;
